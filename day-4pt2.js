@@ -7,17 +7,18 @@ const input = readFileSync("day-4-input.txt", "utf8");
 const result = input
 	.split("\n")
 	.map(line => {
-		const pieces = line
-			.split(/\s+/);
+		const words = line
+			.split(/\s+/)
+			.map(word => word.split("").sort().join(""));
 
 		const seen = new Set();
 
-		for (const piece of pieces) {
-			if (seen.has(piece)) {
+		for (const word of words) {
+			if (seen.has(word)) {
 				return false;
 			}
 
-			seen.add(piece);
+			seen.add(word);
 		}
 
 		return true;
