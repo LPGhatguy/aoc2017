@@ -2,7 +2,7 @@
 
 const { readFileSync } = require("fs");
 
-const input = readFileSync("day-12-input.txt", "utf8");
+const input = readFileSync("input.txt", "utf8");
 
 const connections = input
 	.split("\n")

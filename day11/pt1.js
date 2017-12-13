@@ -6,7 +6,7 @@
 
 const { readFileSync } = require("fs");
 
-const input = readFileSync("day-11-input.txt", "utf8");
+const input = readFileSync("input.txt", "utf8");
 
 const directions = input
 	.split(",");

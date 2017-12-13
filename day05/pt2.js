@@ -2,7 +2,7 @@
 
 const { readFileSync } = require("fs");
 
-const input = readFileSync("day-5-input.txt", "utf8");
+const input = readFileSync("input.txt", "utf8");
 
 // const input = `
 // 0
@@ -21,13 +21,7 @@ let stepCount = 0;
 
 while (true) {
 	const next = cursor + values[cursor];
-
-	if (values[cursor] >= 3) {
-		values[cursor]--;
-	} else {
-		values[cursor]++;
-	}
-
+	values[cursor]++;
 	stepCount++;
 
 	if (next >= values.length) {
