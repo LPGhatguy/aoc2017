@@ -2,7 +2,7 @@
 
 const { readFileSync } = require("fs");
 
-const input = readFileSync("day-1pt2-input.txt", "utf8");
+const input = readFileSync("day-1-input.txt", "utf8");
 
 let sum = 0;
 
